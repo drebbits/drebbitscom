@@ -1,8 +1,8 @@
 <?php
 /**
- * _s Theme Customizer.
+ * drebbits Theme Customizer.
  *
- * @package _s
+ * @package drebbits
  */
 
 /**
