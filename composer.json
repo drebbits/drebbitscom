@@ -1,0 +1,14 @@
+{
+  "name": "drebbits/drebbitscom",
+  "description": "Unit Testing",
+  "authors": [
+    {
+      "name": "Dreb Bits",
+      "email": "hello@drebbits.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "~3.7",
+    "10up/wp_mock": "dev-master"
+  }
+}
