@@ -76,13 +76,13 @@ module.exports = function( grunt ) {
 			theme: {
 				options: {
 					outputStyle: 'compressed',
-					sourceMap: false,
+					sourceMap: true,
 					precision: 2
 				},
 				files: [{
 					expand: true,
-					cwd: 'assets/css/sass',
-					src: ['*.scss'],
+					cwd: 'assets/css/sass/',
+					src: ['style.scss'],
 					dest: 'assets/css/',
 					ext: '.css'
 				}]
@@ -90,7 +90,7 @@ module.exports = function( grunt ) {
 			admin: {
 				options: {
 					outputStyle: 'compressed',
-					sourceMap: false,
+					sourceMap: true,
 					precision: 2
 				},
 				files: {
