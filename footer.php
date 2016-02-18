@@ -11,14 +11,14 @@
 
 ?>
 
-	</div><!-- #content -->
+	</div><!-- .-inner-wrap -->
+</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			&copy; Dreb Bits. <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'drebbits' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'drebbits' ), 'WordPress' ); ?></a>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+	<div class="site-info">
+		&copy; Dreb Bits. <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'drebbits' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'drebbits' ), 'WordPress' ); ?></a>
+	</div><!-- .site-info -->
+</footer><!-- #colophon -->
 
 <?php wp_footer(); ?>
 

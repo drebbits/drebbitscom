@@ -1,5 +1,19 @@
-// @import "../layout/content-sidebar";
-// @import "../layout/sidebar-content";
+.site-content {
+	background: $color__background-content;
+	padding: 1em 0;
+
+  .-inner-wrap {
+    margin: 0 auto;
+    max-width: 72em;
+    padding: 0 4.813em;
+  }
+}
+
+/*--------------------------------------------------------------
+## Content Layout
+--------------------------------------------------------------*/
+@import "../layout/content-sidebar";
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/

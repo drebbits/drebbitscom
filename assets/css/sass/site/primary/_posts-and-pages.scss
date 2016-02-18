@@ -4,6 +4,8 @@
 
 .hentry {
 	margin: 0 0 1.5em;
+	border-bottom: 1px solid $color__border-hentry;
+	padding: 0 2em 2em 0;
 }
 
 .byline,
@@ -25,4 +27,22 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.entry-header {
+	.entry-title, .entry-title a {
+		color: $color__text-heading;
+	}
+	.entry-title {
+		font-size: 2em;
+		margin-bottom: 0;
+
+		a:hover,
+		a:focus{
+			color: $color__link-hover;
+		}
+	}
+	.entry-meta {
+		color: $color__text-meta;
+	}
 }

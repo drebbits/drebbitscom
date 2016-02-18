@@ -75,7 +75,7 @@ module.exports = function( grunt ) {
 		sass:   {
 			theme: {
 				options: {
-					outputStyle: 'compressed',
+					outputStyle: 'expanded',
 					sourceMap: true,
 					precision: 2
 				},
@@ -89,7 +89,7 @@ module.exports = function( grunt ) {
 			},
 			admin: {
 				options: {
-					outputStyle: 'compressed',
+					outputStyle: 'expanded',
 					sourceMap: true,
 					precision: 2
 				},
