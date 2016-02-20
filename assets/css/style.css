@@ -910,6 +910,7 @@ a:hover, a:active {
 }
 
 .site-description {
+  clear: both;
   font-size: 1.125em;
   margin-left: 5%;
   width: 80%;
@@ -930,7 +931,7 @@ a:hover, a:active {
 }
 
 .site-title {
-  margin-bottom: 0;
+  float: left;
 }
 
 .site-title img {
@@ -1035,6 +1036,27 @@ body:not(.home) .site-branding p {
 
 .entry-header .entry-meta {
   color: #969696;
+}
+
+.entry-thumbnail {
+  float: left;
+  margin-top: 1.5em;
+  width: 35%;
+}
+
+.home .entry-thumbnail + .entry-content {
+  float: right;
+  width: 60%;
+}
+
+.entry-footer {
+  color: #969696;
+  font-size: 0.875em;
+}
+
+.entry-footer .cat-links:before {
+  content: '\2022';
+  margin: 0 5px;
 }
 
 /*--------------------------------------------------------------

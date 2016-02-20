@@ -6,6 +6,7 @@
 }
 
 .site-description {
+	clear: both;
 	font-size: 1.125em;
 	margin-left: 5%;
 	width: 80%;
@@ -26,7 +27,7 @@
 }
 
 .site-title {
-	margin-bottom: 0;
+	float: left;
 
 	img {
 		display: block;

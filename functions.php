@@ -158,6 +158,38 @@ require get_template_directory() . '/inc/jetpack.php';
 add_image_size( 'logo', 9999, 40 );
 
 /**
+ * Filter post classes
+ *
+ * @param $classes
+ * @param $class
+ * @param $post_ID
+ *
+ * @return array
+ */
+function dbx_paper_post_class( $classes, $class, $post_ID ) {
+	$classes = [ 'hentry', 'clear' ];
+
+	return $classes;
+}
+add_filter( 'post_class', 'dbx_paper_post_class', 10, 3 );
+
+/**
+ * Filter the except length to 20 characters.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function dbx_paper_excerpt_length( $length ) {
+
+	if ( ! has_post_thumbnail() ) {
+		$length = 150;
+	}
+
+	return $length;
+}
+add_filter( 'excerpt_length', 'dbx_paper_excerpt_length', 999 );
+
+/**
  * Relocate any code beyond this point!!!!!!
  */
 
