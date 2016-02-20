@@ -929,13 +929,21 @@ a:hover, a:active {
   color: #9c9c5a;
 }
 
-.single .site-branding, .page .site-branding {
+.site-title {
+  margin-bottom: 0;
+}
+
+.site-title img {
+  display: block;
+}
+
+body:not(.home) .site-branding {
   margin: 0;
   padding: 0;
   float: left;
 }
 
-.single .site-branding p, .page .site-branding p {
+body:not(.home) .site-branding p {
   margin: 0;
 }
 

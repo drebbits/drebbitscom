@@ -25,7 +25,15 @@
 	}
 }
 
-.single .site-branding, .page .site-branding {
+.site-title {
+	margin-bottom: 0;
+
+	img {
+		display: block;
+	}
+}
+
+body:not(.home) .site-branding {
 	margin: 0;
 	padding: 0;
 	float: left;

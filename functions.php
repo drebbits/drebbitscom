@@ -151,3 +151,13 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Add Image Sizes
+ */
+add_image_size( 'logo', 9999, 40 );
+
+/**
+ * Relocate any code beyond this point!!!!!!
+ */
+
