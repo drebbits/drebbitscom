@@ -794,6 +794,29 @@ a:hover, a:active {
 }
 
 /*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+.page-numbers {
+  margin-left: 0;
+}
+
+.page-numbers li {
+  display: inline-block;
+}
+
+.page-numbers li:first-child {
+  padding-right: 0.75em;
+}
+
+.page-numbers li + li {
+  padding: 0 0.75em;
+}
+
+.page-numbers li .current {
+  border-bottom: 2px solid #9c9c5a;
+}
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */

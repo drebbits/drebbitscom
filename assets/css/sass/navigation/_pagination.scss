@@ -1,0 +1,19 @@
+.page-numbers {
+	margin-left: 0;
+}
+
+.page-numbers li {
+	display: inline-block;
+
+	&:first-child {
+		padding-right: 0.75em;
+	}
+
+	& + li {
+		padding: 0 0.75em;
+	}
+
+	.current {
+		border-bottom: 2px solid $color__text-pagination--current;
+	}
+}

@@ -33,10 +33,13 @@ get_header(); ?>
 				 */
 				get_template_part( 'template-parts/content-excerpt' );
 
-			endwhile;
+			endwhile; ?>
 
-			the_posts_navigation();
+			<nav class="pagination" role="navigation">
+				<?php echo wp_kses_post( paginate_links( array( 'type' => 'list' ) ) ); ?>
+			</nav><!-- .navigation -->
 
+		<?php
 		else :
 
 			get_template_part( 'template-parts/content', 'none' );
