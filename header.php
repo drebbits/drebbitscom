@@ -31,7 +31,7 @@
 		<div class="site-branding">
 			<?php
 			if ( is_front_page() && is_home() ) : ?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( wp_get_attachment_image_url( get_theme_mod( 'sitelogo' ), 'full' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" width="196" height="36" /></a></h1>
+				<h1 class="site-title"><img src="<?php echo esc_url( wp_get_attachment_image_url( get_theme_mod( 'sitelogo' ), 'full' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" width="196" height="36" /></h1>
 			<?php else : ?>
 				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( wp_get_attachment_image_url( get_theme_mod( 'sitelogo' ), 'logo' ) ); ?>" title="<?php bloginfo( 'name' ); ?>" width="108" height="20" /></a>
 			<?php
