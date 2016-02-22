@@ -961,14 +961,10 @@ a:hover, a:active {
   display: block;
 }
 
-body:not(.home) .site-branding {
+body:not(.home) .site-branding, body.paged .site-branding {
   margin: 0;
   padding: 0;
   float: left;
-}
-
-body:not(.home) .site-branding p {
-  margin: 0;
 }
 
 /*--------------------------------------------------------------

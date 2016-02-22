@@ -190,6 +190,15 @@ function dbx_paper_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'dbx_paper_excerpt_length', 999 );
 
 /**
+ * Are we on the very home of the site? Like not paged.
+ *
+ * @return bool
+ */
+function dbx_is_home() {
+	return is_front_page() && ( is_home() && ! is_paged() );
+}
+
+/**
  * Relocate any code beyond this point!!!!!!
  */
 
