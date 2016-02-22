@@ -47,13 +47,19 @@
 	}
 }
 
+.page-header {
+	.page-title {
+		border-bottom: 1px solid $color__border-page-title;
+	}
+}
+
 .entry-thumbnail {
 	float: left;
 	margin-top: 1.5em;
 	width: 35%;
 }
 
-.home .entry-thumbnail + .entry-content {
+body:not(.single) .entry-thumbnail + .entry-content {
 	float: right;
 	width: 60%;
 }
@@ -62,7 +68,7 @@
 	color: $color__text-meta;
 	font-size: 0.875em;
 
-	.cat-links:before {
+	span + span:before {
 		content: '\2022';
 		margin: 0 5px;
 	}

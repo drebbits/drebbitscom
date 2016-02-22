@@ -971,6 +971,11 @@ body:not(.home) .site-branding p {
   width: 100%;
 }
 
+.content-area h1, .content-area .entry-header > h1 {
+  font-size: 2.625em;
+  font-weight: 500;
+}
+
 .site-main {
   margin: 0 27% 0 0;
 }
@@ -1038,13 +1043,17 @@ body:not(.home) .site-branding p {
   color: #969696;
 }
 
+.page-header .page-title {
+  border-bottom: 1px solid #969696;
+}
+
 .entry-thumbnail {
   float: left;
   margin-top: 1.5em;
   width: 35%;
 }
 
-.home .entry-thumbnail + .entry-content {
+body:not(.single) .entry-thumbnail + .entry-content {
   float: right;
   width: 60%;
 }
@@ -1054,7 +1063,7 @@ body:not(.home) .site-branding p {
   font-size: 0.875em;
 }
 
-.entry-footer .cat-links:before {
+.entry-footer span + span:before {
   content: '\2022';
   margin: 0 5px;
 }

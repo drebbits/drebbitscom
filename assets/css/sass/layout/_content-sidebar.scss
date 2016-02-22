@@ -2,6 +2,11 @@
 	float: left;
 	margin: 0 (-$size__site-sidebar) 0 0;
 	width: $size__site-main;
+
+	h1, .entry-header > h1 {
+		font-size: 2.625em;
+		font-weight: 500;
+	}
 }
 
 .site-main {
