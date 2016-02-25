@@ -44,3 +44,7 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+.greyhair, .greyhair * {
+	color: $color__text-misc--greyhair;
+}

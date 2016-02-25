@@ -509,6 +509,10 @@ big {
   font-size: 125%;
 }
 
+.greyhair, .greyhair * {
+  color: #969696;
+}
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -705,11 +709,6 @@ a:hover, a:active {
   z-index: 99999;
 }
 
-.main-navigation ul ul ul {
-  left: -999em;
-  top: 0;
-}
-
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
   left: 100%;
@@ -741,6 +740,21 @@ a:hover, a:active {
 
 .main-navigation > div > ul > li > ul {
   padding-top: 0.625em;
+  background: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 -10px;
+}
+
+.main-navigation > div > ul > li > ul li:hover ul {
+  position: static;
+  margin-left: 20px;
+}
+
+.main-navigation > div > ul > li > ul li:hover ul li:before {
+  content: '—';
+  float: left;
+  margin-right: 5px;
 }
 
 .main-navigation a {
@@ -791,6 +805,11 @@ a:hover, a:active {
   float: right;
   text-align: right;
   width: 50%;
+}
+
+.no-bull {
+  display: block;
+  margin-left: -2em;
 }
 
 /*--------------------------------------------------------------
@@ -915,6 +934,10 @@ a:hover, a:active {
 
 .widget select {
   max-width: 100%;
+}
+
+.widget > div {
+  font-size: 0.9375em;
 }
 
 .widget-title {

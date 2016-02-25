@@ -16,11 +16,6 @@
 			left: -999em;
 			z-index: 99999;
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
-
 			li {
 				&:hover > ul,
 				&.focus > ul {
@@ -65,6 +60,21 @@
 
 		> ul {
 			padding-top: 0.625em;
+			background: white;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin: 0 -10px;
+
+			li:hover ul {
+				position: static;
+				margin-left: 20px;
+
+				li:before {
+					content: '—';
+					float: left;
+					margin-right: 5px;
+				}
+			}
 		}
 	}
 	a {
@@ -115,4 +125,9 @@
 		text-align: right;
 		width: 50%;
 	}
+}
+
+.no-bull {
+	display: block;
+	margin-left: -2em;
 }
