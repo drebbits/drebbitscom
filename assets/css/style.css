@@ -942,6 +942,7 @@ a:hover, a:active {
 
 .widget-title {
   font-size: 1em;
+  margin-top: 1.66em;
   font-weight: 500;
 }
 
@@ -951,8 +952,8 @@ a:hover, a:active {
 .site-header {
   background: transparent;
   margin: 0 auto;
-  max-width: 72em;
-  padding: 1.25em 4.813em;
+  max-width: 65em;
+  padding: 1.25em 1.875em;
 }
 
 .site-description {
@@ -1000,8 +1001,8 @@ body:not(.home) .site-branding, body.paged .site-branding {
 
 .site-content .-inner-wrap {
   margin: 0 auto;
-  max-width: 72em;
-  padding: 0 4.813em;
+  max-width: 65em;
+  padding: 1.25em 1.875em;
 }
 
 /*--------------------------------------------------------------
