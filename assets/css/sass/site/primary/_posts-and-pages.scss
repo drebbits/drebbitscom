@@ -34,7 +34,6 @@
 		color: $color__text-heading;
 	}
 	.entry-title {
-		font-size: 2em;
 		margin-bottom: 0;
 
 		a:hover,
@@ -53,15 +52,21 @@
 	}
 }
 
-.entry-thumbnail {
-	float: left;
-	margin-top: 1.5em;
-	width: 35%;
+body:not(.single) .entry-thumbnail + .entry-content {
+	margin-top: 0;
 }
 
-body:not(.single) .entry-thumbnail + .entry-content {
-	float: right;
-	width: 60%;
+@media screen and (min-width: 37.5em) {
+	.entry-thumbnail {
+		float: left;
+		margin-top: 1.5em;
+		width: 35%;
+	}
+
+	body:not(.single) .entry-thumbnail + .entry-content {
+		float: right;
+		width: 60%;
+	}
 }
 
 .entry-footer {

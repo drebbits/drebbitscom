@@ -1,12 +1,10 @@
-body,
-button,
-input,
-select,
-textarea {
+html {
 	color: $color__text-main;
-	font-family: $font__main;
-	@include font-size(1);
-	line-height: $font__line-height-body;
+	font: 87.5%/1.7778 $font__main;
+
+	@media screen and (min-width: 37.5em) {
+		font-size: 112.5%;
+	}
 }
 
 @import "headings";

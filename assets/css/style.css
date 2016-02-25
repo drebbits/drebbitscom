@@ -444,20 +444,20 @@ th {
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
-body,
-button,
-input,
-select,
-textarea {
-  color: #2c2c2c;
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  font-size: 1rem;
-  line-height: 1.6;
+html {
+  color: #5a5a5a;
+  font: 87.5%/1.7778 Roboto, sans-serif;
+}
+
+@media screen and (min-width: 37.5em) {
+  html {
+    font-size: 112.5%;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+  line-height: 1.25;
 }
 
 p {
@@ -480,7 +480,7 @@ address {
 pre {
   background: #eee;
   font-family: "Courier 10 Pitch", Courier, monospace;
-  font-size: 15px;
+  font-size: 13.12px;
   font-size: 0.94rem;
   line-height: 1.6;
   margin-bottom: 1.6em;
@@ -491,7 +491,7 @@ pre {
 
 code, kbd, tt, var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-  font-size: 15px;
+  font-size: 13.12px;
   font-size: 0.94rem;
 }
 
@@ -599,7 +599,7 @@ input[type="submit"] {
   background: #e6e6e6;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
   color: rgba(0, 0, 0, 0.8);
-  font-size: 12px;
+  font-size: 10.5px;
   font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em;
@@ -770,19 +770,8 @@ a:hover, a:active {
   color: #9c9c5a;
 }
 
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
+.main-navigation ul {
   display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-  .menu-toggle {
-    display: none;
-  }
-  .main-navigation ul {
-    display: block;
-  }
 }
 
 .site-main .comment-navigation, .site-main
@@ -854,7 +843,7 @@ a:hover, a:active {
   clip: auto !important;
   color: #21759b;
   display: block;
-  font-size: 14px;
+  font-size: 12.25px;
   font-size: 0.88rem;
   font-weight: bold;
   height: auto;
@@ -927,6 +916,16 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area {
+  display: none;
+}
+
+@media screen and (min-width: 37.5em) {
+  .widget-area {
+    display: block;
+  }
+}
+
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */
@@ -942,7 +941,7 @@ a:hover, a:active {
 
 .widget-title {
   font-size: 1em;
-  margin-top: 1.66em;
+  margin-top: 1.9em;
   font-weight: 500;
 }
 
@@ -952,15 +951,20 @@ a:hover, a:active {
 .site-header {
   background: transparent;
   margin: 0 auto;
-  max-width: 65em;
+  max-width: 54.44rem;
   padding: 1.25em 1.875em;
 }
 
 .site-description {
   clear: both;
-  font-size: 1.125em;
-  margin-left: 5%;
-  width: 80%;
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-description {
+    font-size: 1.125em;
+    margin-left: 5%;
+    width: 80%;
+  }
 }
 
 .site-description:before {
@@ -969,12 +973,18 @@ a:hover, a:active {
 }
 
 .site-branding {
-  margin: 0 4.688em;
-  padding: 6.25em 0 3.125em;
+  padding: 2.25em 0 0;
 }
 
 .site-branding a, .site-branding a:visited {
   color: #9c9c5a;
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-branding {
+    margin: 0 4.688em;
+    padding: 6.25em 0 3.125em;
+  }
 }
 
 .site-title {
@@ -983,6 +993,13 @@ a:hover, a:active {
 
 .site-title img {
   display: block;
+  width: 100px;
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-title img {
+    width: 160px;
+  }
 }
 
 body:not(.home) .site-branding, body.paged .site-branding {
@@ -1001,7 +1018,7 @@ body:not(.home) .site-branding, body.paged .site-branding {
 
 .site-content .-inner-wrap {
   margin: 0 auto;
-  max-width: 65em;
+  max-width: 54.44rem;
   padding: 1.25em 1.875em;
 }
 
@@ -1010,7 +1027,6 @@ body:not(.home) .site-branding, body.paged .site-branding {
 --------------------------------------------------------------*/
 .content-area {
   float: left;
-  margin: 0 -22% 0 0;
   width: 100%;
 }
 
@@ -1019,8 +1035,16 @@ body:not(.home) .site-branding, body.paged .site-branding {
   font-weight: 500;
 }
 
-.site-main {
-  margin: 0 27% 0 0;
+@media screen and (min-width: 37.5em) {
+  .content-area {
+    margin: 0 -22% 0 0;
+  }
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-main {
+    margin: 0 27% 0 0;
+  }
 }
 
 .site-content .widget-area {
@@ -1073,7 +1097,6 @@ body:not(.home) .site-branding, body.paged .site-branding {
 }
 
 .entry-header .entry-title {
-  font-size: 2em;
   margin-bottom: 0;
 }
 
@@ -1090,15 +1113,20 @@ body:not(.home) .site-branding, body.paged .site-branding {
   border-bottom: 1px solid #969696;
 }
 
-.entry-thumbnail {
-  float: left;
-  margin-top: 1.5em;
-  width: 35%;
+body:not(.single) .entry-thumbnail + .entry-content {
+  margin-top: 0;
 }
 
-body:not(.single) .entry-thumbnail + .entry-content {
-  float: right;
-  width: 60%;
+@media screen and (min-width: 37.5em) {
+  .entry-thumbnail {
+    float: left;
+    margin-top: 1.5em;
+    width: 35%;
+  }
+  body:not(.single) .entry-thumbnail + .entry-content {
+    float: right;
+    width: 60%;
+  }
 }
 
 .entry-footer {
@@ -1134,9 +1162,16 @@ body:not(.single) .entry-thumbnail + .entry-content {
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
+  font-size: 0.86em;
   margin: 0 auto;
-  max-width: 72em;
-  padding: 1.563em 4.813em;
+  max-width: 54.44rem;
+  padding: 1.25em 1.875em;
+}
+
+@media screen and (min-width: 37.5em) {
+  .site-footer {
+    font-size: 1em;
+  }
 }
 
 /*--------------------------------------------------------------

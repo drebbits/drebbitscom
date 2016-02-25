@@ -4,6 +4,11 @@
 	font-size: $sizeValue * 1rem;
 }
 
+@mixin font-size-desktop($sizeValue: 1) {
+	font-size: ($sizeValue * $font__size-desktop) * 1px;
+	font-size: $sizeValue * 1rem;
+}
+
 // Center block
 @mixin center-block {
 	display: block;

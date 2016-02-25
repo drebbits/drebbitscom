@@ -1,15 +1,18 @@
 .site-header {
 	background: $color__background-header;
 	margin: 0 auto;
-	max-width: 65em;
+	max-width: 54.44rem;
 	padding: 1.25em 1.875em;
 }
 
 .site-description {
 	clear: both;
-	font-size: 1.125em;
-	margin-left: 5%;
-	width: 80%;
+
+	@media screen and (min-width: 37.5em) {
+		font-size: 1.125em;
+		margin-left: 5%;
+		width: 80%;
+	}
 }
 
 .site-description:before {
@@ -18,11 +21,15 @@
 }
 
 .site-branding {
-	margin: 0 4.688em;
-	padding: 6.25em 0 3.125em;
+	padding: 2.25em 0 0;
 
 	a, a:visited {
 		color: $color__link
+	}
+
+	@media screen and (min-width: 37.5em) {
+		margin: 0 4.688em;
+		padding: 6.25em 0 3.125em;
 	}
 }
 
@@ -31,6 +38,11 @@
 
 	img {
 		display: block;
+		width: 100px;
+
+		@media screen and (min-width: 37.5em) {
+			width: 160px;
+		}
 	}
 }
 
