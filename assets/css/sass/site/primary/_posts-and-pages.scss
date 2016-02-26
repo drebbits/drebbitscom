@@ -44,12 +44,18 @@
 	.entry-meta {
 		color: $color__text-meta;
 	}
+
 }
 
 .page-header {
 	.page-title {
-		border-bottom: 1px solid $color__border-page-title;
+		margin: 0 0 3rem;
 	}
+}
+
+.archive .page-header .archive-label {
+	text-transform: uppercase;
+	font-size: 0.78rem;
 }
 
 body:not(.single) .entry-thumbnail + .entry-content {

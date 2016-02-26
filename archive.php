@@ -17,8 +17,7 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
+					printf( wp_kses_post( __( '<span class="archive-label">Category</span><h1 class="page-title">%s</h1>' ) ), single_cat_title( '', false ) );
 				?>
 			</header><!-- .page-header -->
 

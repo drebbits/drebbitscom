@@ -533,6 +533,10 @@ body {
 }
 
 blockquote, q {
+  background: #dddddd;
+  border-left: 4px solid #2c2c2c;
+  margin-left: 0;
+  padding: 0.25rem 0.25rem 0.25rem 2rem;
   quotes: "" "";
 }
 
@@ -1031,7 +1035,7 @@ body:not(.home) .site-branding, body.paged .site-branding {
 }
 
 .content-area h1, .content-area .entry-header > h1 {
-  font-size: 2.625em;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -1110,7 +1114,12 @@ body:not(.home) .site-branding, body.paged .site-branding {
 }
 
 .page-header .page-title {
-  border-bottom: 1px solid #969696;
+  margin: 0 0 3rem;
+}
+
+.archive .page-header .archive-label {
+  text-transform: uppercase;
+  font-size: 0.78rem;
 }
 
 body:not(.single) .entry-thumbnail + .entry-content {
