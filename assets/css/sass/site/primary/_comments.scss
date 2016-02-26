@@ -14,7 +14,7 @@
 	}
 }
 .comment-content {
-	font-size: 0.778rem;
+	font-size: $font__size--small;
 
 	a {
 		word-wrap: break-word;
@@ -45,9 +45,9 @@
 }
 .comment-metadata a {
 	color: $color__text-meta;
-	font-size: 0.778rem;
+	font-size: $font__size--small;
 	margin-left: 5px;
 }
 .reply {
-	font-size: 0.778rem;
+	font-size: $font__size--small;
 }

@@ -204,7 +204,7 @@ function dbx_is_home() {
 }
 
 function concat_unit_time( $human_time_diff ) {
-	$human_time_diff = preg_replace('/\syears|\syear/i', 'yr', $human_time_diff );
+	$human_time_diff = preg_replace('/\syear/i', 'yr', $human_time_diff );
 	return $human_time_diff;
 }
 add_filter( 'human_time_diff', 'concat_unit_time', 10 );

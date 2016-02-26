@@ -14,11 +14,11 @@
 	}
 
 	> div {
-		font-size: 0.9375em;
+		font-size: $font__size--small;
 	}
 }
 .widget-title {
-	font-size: 1em;
+	font-size: $font__size--medium;
 	margin-top: (26.56 / $font__size) * 1em;
 	font-weight: 500;
 }

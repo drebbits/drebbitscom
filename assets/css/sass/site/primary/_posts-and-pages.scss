@@ -19,8 +19,7 @@
 }
 
 .page-content,
-.entry-content,
-.entry-summary {
+.entry-content {
 	margin: 1.5em 0 0;
 }
 
@@ -43,6 +42,7 @@
 	}
 	.entry-meta {
 		color: $color__text-meta;
+		font-size: $font__size--small;
 	}
 
 }
@@ -58,7 +58,7 @@
 	font-size: 0.78rem;
 }
 
-body:not(.single) .entry-thumbnail + .entry-content {
+body:not(.single) .entry-thumbnail + .entry-summary {
 	margin-top: 0;
 }
 
@@ -69,7 +69,7 @@ body:not(.single) .entry-thumbnail + .entry-content {
 		width: 35%;
 	}
 
-	body:not(.single) .entry-thumbnail + .entry-content {
+	body:not(.single) .entry-thumbnail + .entry-summary {
 		float: right;
 		width: 60%;
 	}

@@ -446,7 +446,7 @@ th {
 --------------------------------------------------------------*/
 html {
   color: #5a5a5a;
-  font: 87.5%/1.7778 Roboto, sans-serif;
+  font: 87.5%/1.6 Roboto, sans-serif;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -941,11 +941,11 @@ a:hover, a:active {
 }
 
 .widget > div {
-  font-size: 0.9375em;
+  font-size: 0.78rem;
 }
 
 .widget-title {
-  font-size: 1em;
+  font-size: 0.89rem;
   margin-top: 1.9em;
   font-weight: 500;
 }
@@ -983,13 +983,18 @@ a:hover, a:active {
 
 .site-branding a, .site-branding a:visited {
   color: #9c9c5a;
+  height: 28px;
 }
 
 @media screen and (min-width: 37.5em) {
   .site-branding {
     margin: 0 4.688em;
-    padding: 6.25em 0 3.125em;
+    padding: 5em 0 2em;
   }
+}
+
+h1.site-title {
+  margin-bottom: 0.5rem;
 }
 
 .site-title {
@@ -997,12 +1002,11 @@ a:hover, a:active {
 }
 
 .site-title img {
-  display: block;
   width: 100px;
 }
 
 @media screen and (min-width: 37.5em) {
-  .site-title img {
+  .home .site-branding .site-title img, body.home:not(.paged) .site-branding .site-title img {
     width: 160px;
   }
 }
@@ -1087,8 +1091,7 @@ body:not(.home) .site-branding, body.paged .site-branding {
 }
 
 .page-content,
-.entry-content,
-.entry-summary {
+.entry-content {
   margin: 1.5em 0 0;
 }
 
@@ -1112,6 +1115,7 @@ body:not(.home) .site-branding, body.paged .site-branding {
 
 .entry-header .entry-meta {
   color: #969696;
+  font-size: 0.78rem;
 }
 
 .page-header .page-title {
@@ -1123,7 +1127,7 @@ body:not(.home) .site-branding, body.paged .site-branding {
   font-size: 0.78rem;
 }
 
-body:not(.single) .entry-thumbnail + .entry-content {
+body:not(.single) .entry-thumbnail + .entry-summary {
   margin-top: 0;
 }
 
@@ -1133,7 +1137,7 @@ body:not(.single) .entry-thumbnail + .entry-content {
     margin-top: 1.5em;
     width: 35%;
   }
-  body:not(.single) .entry-thumbnail + .entry-content {
+  body:not(.single) .entry-thumbnail + .entry-summary {
     float: right;
     width: 60%;
   }
@@ -1180,7 +1184,7 @@ body:not(.single) .entry-thumbnail + .entry-content {
 }
 
 .comment-content {
-  font-size: 0.778rem;
+  font-size: 0.78rem;
 }
 
 .comment-content a {
@@ -1217,12 +1221,12 @@ body:not(.single) .entry-thumbnail + .entry-content {
 
 .comment-metadata a {
   color: #969696;
-  font-size: 0.778rem;
+  font-size: 0.78rem;
   margin-left: 5px;
 }
 
 .reply {
-  font-size: 0.778rem;
+  font-size: 0.78rem;
 }
 
 /*--------------------------------------------------------------

@@ -24,22 +24,30 @@
 	padding: 2.25em 0 0;
 
 	a, a:visited {
-		color: $color__link
+		color: $color__link;
+		height: 28px;
 	}
 
 	@media screen and (min-width: 37.5em) {
 		margin: 0 4.688em;
-		padding: 6.25em 0 3.125em;
+		padding: 5em 0 2em;
 	}
+}
+
+h1.site-title {
+	margin-bottom: 0.5rem;
 }
 
 .site-title {
 	float: left;
 
 	img {
-		display: block;
 		width: 100px;
+	}
+}
 
+.home .site-branding, body.home:not(.paged) .site-branding {
+	.site-title img {
 		@media screen and (min-width: 37.5em) {
 			width: 160px;
 		}

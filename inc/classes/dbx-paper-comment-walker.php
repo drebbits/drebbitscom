@@ -35,7 +35,7 @@ class Paper_Walker_Comment extends Walker_Comment {
 							<time datetime="<?php comment_time( 'c' ); ?>">
 								<?php
 								/* translators: 1: comment date, 2: comment time */
-								printf( esc_html( '~%s ago' ), esc_html( human_time_diff( get_comment_time( 'U' ) ) ) );
+								printf( esc_html( '%s ago' ), esc_html( human_time_diff( get_comment_time( 'U' ) ) ) );
 								?>
 							</time>
 						</a>
