@@ -1,6 +1,9 @@
 html {
 	color: $color__text-main;
 	font: 87.5%/1.6 $font__main;
+	-webkit-font-smoothing: antialiased;
+	-webkit-font-feature-settings: "liga","hist","onum";
+	font-feature-settings: "liga","hist","onum";
 
 	@media screen and (min-width: 37.5em) {
 		font-size: 112.5%;
