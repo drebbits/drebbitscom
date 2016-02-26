@@ -87,9 +87,34 @@ module.exports = function( grunt ) {
 					ext: '.css'
 				}]
 			},
+			themeRelease: {
+				options: {
+					outputStyle: 'compressed',
+					sourceMap: false,
+					precision: 2
+				},
+				files: [{
+					expand: true,
+					cwd: 'assets/css/sass/',
+					src: ['style.scss'],
+					dest: 'assets/css/',
+					ext: '.css'
+				}]
+			},
 			admin: {
 				options: {
 					outputStyle: 'expanded',
+					sourceMap: true,
+					precision: 2
+				},
+				files: {
+					//'assets/css/admin.css': 'assets/css/admin_sass/admin.scss',
+					//'assets/css/editor.css': 'assets/css/editor_sass/editor.scss'
+				}
+			},
+			adminRelease: {
+				options: {
+					outputStyle: 'compressed',
 					sourceMap: true,
 					precision: 2
 				},
@@ -162,7 +187,7 @@ module.exports = function( grunt ) {
 	grunt.registerTask( 'js', ['jshint', 'concat', 'uglify'] );
 	grunt.registerTask( 'css', ['sass:theme', 'postcss:theme'] );
 	grunt.registerTask( 'admin', ['sass:admin', 'postcss:admin'] );
-	grunt.registerTask( 'release', ['concat', 'uglify', 'sassdoc']);
+	grunt.registerTask( 'release', ['sass:themeRelease', 'sass:adminRelease', 'concat', 'uglify', 'sassdoc']);
 
 	grunt.util.linefeed = '\n';
 };
