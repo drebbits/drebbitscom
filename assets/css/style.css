@@ -764,6 +764,7 @@ a:hover, a:active {
 .main-navigation a {
   color: #747474;
   display: block;
+  font-size: 0.889rem;
   text-decoration: none;
 }
 
@@ -1140,7 +1141,7 @@ body:not(.single) .entry-thumbnail + .entry-content {
 
 .entry-footer {
   color: #969696;
-  font-size: 0.875em;
+  font-size: 0.778rem;
 }
 
 .entry-footer span + span:before {
@@ -1159,28 +1160,79 @@ body:not(.single) .entry-thumbnail + .entry-content {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+.comments-area {
+  padding: 5px 1rem 0;
+}
+
+.comment-list {
+  margin-left: 3rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .comment-list {
+    margin-left: 2.25rem;
+  }
+}
+
+.comment-list .comment {
+  list-style: none;
+  margin: 2rem 0 0 0;
+}
+
+.comment-content {
+  font-size: 0.778rem;
+}
+
 .comment-content a {
   word-wrap: break-word;
+}
+
+.comment-content p {
+  margin: 0 0 0.5rem;
 }
 
 .bypostauthor {
   display: block;
 }
 
+.comment-author {
+  position: relative;
+}
+
+.comment-author img {
+  position: absolute;
+  left: -3rem;
+}
+
+@media screen and (min-width: 37.5em) {
+  .comment-author img {
+    left: -2.25rem;
+  }
+}
+
+.comment-author span {
+  font-weight: 500;
+  font-size: 0.889rem;
+}
+
+.comment-metadata a {
+  color: #969696;
+  font-size: 0.778rem;
+  margin-left: 5px;
+}
+
+.reply {
+  font-size: 0.778rem;
+}
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  font-size: 0.86em;
+  font-size: 0.889rem;
   margin: 0 auto;
   max-width: 54.44rem;
   padding: 1.25em 1.875em;
-}
-
-@media screen and (min-width: 37.5em) {
-  .site-footer {
-    font-size: 1em;
-  }
 }
 
 /*--------------------------------------------------------------

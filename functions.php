@@ -153,6 +153,11 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/jetpack.php';
 
 /**
+ * Custom comment walker
+ */
+require get_template_directory() . '/inc/classes/dbx-paper-comment-walker.php';
+
+/**
  * Add Image Sizes
  */
 add_image_size( 'logo', 9999, 40 );
@@ -198,7 +203,8 @@ function dbx_is_home() {
 	return is_front_page() && ( is_home() && ! is_paged() );
 }
 
-/**
- * Relocate any code beyond this point!!!!!!
- */
-
+function concat_unit_time( $human_time_diff ) {
+	$human_time_diff = preg_replace('/\syears|\syear/i', 'yr', $human_time_diff );
+	return $human_time_diff;
+}
+add_filter( 'human_time_diff', 'concat_unit_time', 10 );
