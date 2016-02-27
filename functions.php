@@ -202,9 +202,3 @@ add_filter( 'excerpt_length', 'dbx_paper_excerpt_length', 999 );
 function dbx_is_home() {
 	return is_front_page() && ( is_home() && ! is_paged() );
 }
-
-function concat_unit_time( $human_time_diff ) {
-	$human_time_diff = preg_replace('/\syear/i', 'yr', $human_time_diff );
-	return $human_time_diff;
-}
-add_filter( 'human_time_diff', 'concat_unit_time', 10 );
