@@ -987,6 +987,11 @@ a:hover, a:active {
 .site-branding a, .site-branding a:visited {
   color: #9c9c5a;
   height: 28px;
+  display: table-cell;
+}
+
+.site-branding a object, .site-branding a img {
+  vertical-align: middle;
 }
 
 @media screen and (min-width: 37.5em) {
@@ -997,7 +1002,7 @@ a:hover, a:active {
 }
 
 h1.site-title {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 
 .site-title {
