@@ -51,3 +51,8 @@
 .reply {
 	font-size: $font__size--small;
 }
+.comment-reply-title {
+	> small {
+		float: right;
+	}
+}
