@@ -187,7 +187,7 @@ add_filter( 'post_class', 'dbx_paper_post_class', 10, 3 );
 function dbx_paper_excerpt_length( $length ) {
 
 	if ( ! has_post_thumbnail() ) {
-		$length = 150;
+		$length = 80;
 	}
 
 	return $length;
