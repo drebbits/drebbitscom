@@ -80,7 +80,7 @@ if ( post_password_required() ) {
 
 	comment_form(
 		array(
-			'title_reply_before' => '<h5 id="reply-title" class="comment-reply-title">',
+			'title_reply_before' => '<h5 id="reply-title" class="comment-reply-title screen-reader-text">',
 			'title_reply_after' => '</h5>',
 		)
 	);
