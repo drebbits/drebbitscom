@@ -31,7 +31,9 @@
 			<?php
 			if ( dbx_is_home() ) : ?>
 				<h1 class="site-title">
-					<img src="<?php echo esc_url( wp_get_attachment_image_url( get_theme_mod( 'sitelogo' ) ) ); ?>" width="196" height="36" alt="<?php bloginfo( 'name' )?>">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo esc_url( wp_get_attachment_image_url( get_theme_mod( 'sitelogo' ) ) ); ?>" width="196" height="36" alt="<?php bloginfo( 'name' )?>">
+					</a>
 				</h1>
 			<?php else : ?>
 				<a class="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
