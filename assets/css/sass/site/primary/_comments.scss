@@ -52,6 +52,8 @@
 	font-size: $font__size--small;
 }
 .comment-reply-title {
+	@extend .screen-reader-text;
+
 	> small {
 		float: right;
 	}
