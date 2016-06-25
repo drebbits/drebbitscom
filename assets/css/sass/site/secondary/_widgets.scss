@@ -16,6 +16,13 @@
 	> div {
 		font-size: $font__size--small;
 	}
+
+	blockquote {
+		border-top: 1px solid $color__background-hr;
+	    border-left: none;
+	    padding-left: 1em;
+	    background: $color__background-pre;
+	}
 }
 .widget-title {
 	font-size: $font__size--medium;

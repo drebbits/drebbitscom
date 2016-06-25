@@ -51,7 +51,7 @@ h1.site-title {
 	}
 }
 
-.home .site-branding, body.home:not(.paged) .site-branding {
+body.home:not(.paged) .site-branding {
 	.site-title img {
 		@media screen and (min-width: 37.5em) {
 			width: 160px;
