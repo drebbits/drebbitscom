@@ -7,6 +7,12 @@
  * @package drebbits
  */
 
+
+/**
+ * Load theme functions.
+ */
+require get_template_directory() . '/inc/hooks/posts.php';
+
 if ( ! function_exists( 'dbx_paper_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
