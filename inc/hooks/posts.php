@@ -12,8 +12,9 @@ namespace dbx\post;
  *
  * @param int $post_id Post ID.
  */
-function save_post( $post_id ) {
-	$status = wp_remote_request( esc_url( get_permalink( $post_id ) ), array( 'method' => 'PURGE' ) );
+function invalidate_varnish_cache( $post_id ) {
+	$status_single = wp_remote_request( esc_url( get_permalink( $post_id ) ), array( 'method' => 'PURGE' ) );
+	$status_home   = wp_remote_request( get_bloginfo( 'url' ), array( 'method' => 'PURGE' ) );
 	// Maybe use $status for logging later.
 }
-add_action( 'save_post', __NAMESPACE__ . '\save_post' );
+add_action( 'save_post', __NAMESPACE__ . '\invalidate_varnish_cache' );
