@@ -1,7 +1,6 @@
 .site-header {
 	background: $color__background-header;
 	max-width: 70.44rem;
-    padding: 1.25em 0 1.25em 1.875em;
 }
 
 .site-description {
@@ -33,7 +32,8 @@
 	}
 
 	@media screen and (min-width: 37.5em) {
-		margin: 0 4.688em;
+		padding: 1.25em 1.875em 1.875em 6.25em;
+    	margin: 0;
 	}
 }
 
