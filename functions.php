@@ -209,20 +209,6 @@ function dbx_is_home() {
 	return is_front_page() && ( is_home() && ! is_paged() );
 }
 
-/**
- * Adding support to SVG media file type
- *
- * @param array $mime_types
- *
- * @return array
- */
-function add_svg_mime_type($mime_types){
-	$mime_types['svg'] = 'image/svg+xml'; //Adding svg extension
-
-	return $mime_types;
-}
-add_filter( 'upload_mimes', 'add_svg_mime_type' );
-
 function remove_nav_menu_css_class( $class_css, $item ) {
 	return array_filter( $class_css, function( $class ) {
 		return  0 !== strpos( $class, 'menu-item' );
