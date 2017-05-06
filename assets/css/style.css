@@ -695,12 +695,6 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-.main-navigation {
-  clear: both;
-  display: inline-block;
-  float: right;
-}
-
 .main-navigation ul {
   display: none;
   list-style: none;
@@ -730,19 +724,10 @@ a:hover, a:active {
   left: auto;
 }
 
-.main-navigation li {
-  float: left;
-  position: relative;
-}
-
 .main-navigation > div > ul > li {
-  padding: 0 0.5rem;
-}
-
-.main-navigation > div > ul > li:hover > a,
-.main-navigation > div > ul > li.focus > a {
-  border-bottom: 2px solid #969696;
-  margin-bottom: -2px;
+  border-bottom: 1px solid #ccc;
+  padding: 0.45em 0;
+  font-size: 120%;
 }
 
 .main-navigation > div > ul > li > ul {

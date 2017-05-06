@@ -1,7 +1,4 @@
 .main-navigation {
-	clear: both;
-	display: inline-block;
-	float: right;
 	
 	ul {
 		display: none;
@@ -26,14 +23,6 @@
 			a {
 			  	width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
 
 		li:hover > ul,
@@ -41,22 +30,14 @@
 			left: auto;
 		}
 	}
-	li {
-		float: left;
-		position: relative;
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
 	> div > ul > li {
-		padding: 0 0.5rem;
+		border-bottom: 1px solid #ccc;
+	    padding: 0.45em 0;
+	    font-size: 120%;
 
 		&:hover > a,
-		&.focus > a {
-			border-bottom: 2px solid $color__border-nav-children;
-			margin-bottom: -2px;
-		}
+		&.focus > a {}
 
 		> ul {
 			padding-top: 0.625em;
