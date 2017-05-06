@@ -14,6 +14,11 @@
 		border: 1px solid #ddd;
 	    border-radius: 4px;
 	    padding: 0.45rem 0.75rem;
+
+	    &:hover {
+	    	color: $color__link; 
+			border-color: $color__link;
+	    }
 	}
 
 	.nav-next {

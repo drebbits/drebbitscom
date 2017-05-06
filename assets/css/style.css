@@ -798,6 +798,13 @@ a:hover, a:active {
   padding: 0.45rem 0.75rem;
 }
 
+.comment-navigation .nav-links > div > a:hover,
+.posts-navigation .nav-links > div > a:hover,
+.post-navigation .nav-links > div > a:hover {
+  color: #9c9c5a;
+  border-color: #9c9c5a;
+}
+
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
