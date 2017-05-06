@@ -7,6 +7,7 @@
  * @package drebbits
  */
 
+define( 'DBX_THEME', '1.1' );
 
 /**
  * Load theme functions.
