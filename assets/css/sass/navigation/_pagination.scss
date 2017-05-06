@@ -1,3 +1,33 @@
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+	.site-main & {
+		margin: 4em 0 1.5em;
+
+		&:after {
+			@include clearfix;
+			@include clearfix-after;
+		}
+	}
+	
+	.nav-links > div > a {
+		border: 1px solid #ddd;
+	    border-radius: 5px;
+	    padding: 0.45rem 0.45rem;
+	}
+
+	.nav-next {
+		float: left;
+		width: 50%;
+	}
+	
+	.nav-previous {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+
 .page-numbers {
 	margin-left: 0;
 }

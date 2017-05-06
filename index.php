@@ -44,9 +44,14 @@ get_header(); ?>
 
 			endwhile; ?>
 
-			<nav class="pagination" role="navigation">
-			<?php echo wp_kses_post( paginate_links( array( 'type' => 'list' ) ) ); ?>
-			</nav><!-- .navigation -->
+			<?php
+			// Previous/next page navigation.
+			the_posts_navigation( array(
+				'next_text'          => __( '&larr; Newer posts', 'drebbits' ),
+				'prev_text'          => __( 'Older posts &rarr;', 'drebbits' ),
+				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'drebbits' ) . ' </span>',
+			) );
+			?>
 
 		<?php
 		else :

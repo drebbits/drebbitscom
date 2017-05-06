@@ -767,28 +767,6 @@ a:hover, a:active {
   display: block;
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
-.post-navigation {
-  margin: 0 0 1.5em;
-  overflow: hidden;
-}
-
-.comment-navigation .nav-previous,
-.posts-navigation .nav-previous,
-.post-navigation .nav-previous {
-  float: left;
-  width: 50%;
-}
-
-.comment-navigation .nav-next,
-.posts-navigation .nav-next,
-.post-navigation .nav-next {
-  float: right;
-  text-align: right;
-  width: 50%;
-}
-
 .no-bull {
   display: block;
   margin-left: -2em;
@@ -797,6 +775,44 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 ## Pagination
 --------------------------------------------------------------*/
+.site-main .comment-navigation, .site-main
+.posts-navigation, .site-main
+.post-navigation {
+  margin: 4em 0 1.5em;
+}
+
+.site-main .comment-navigation:after, .site-main
+.posts-navigation:after, .site-main
+.post-navigation:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+  clear: both;
+}
+
+.comment-navigation .nav-links > div > a,
+.posts-navigation .nav-links > div > a,
+.post-navigation .nav-links > div > a {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.45rem 0.45rem;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+  float: left;
+  width: 50%;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+  float: right;
+  text-align: right;
+  width: 50%;
+}
+
 .page-numbers {
   margin-left: 0;
 }
