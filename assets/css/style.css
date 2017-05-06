@@ -989,7 +989,6 @@ a:hover, a:active {
 @media screen and (min-width: 37.5em) {
   .site-branding {
     margin: 0 4.688em;
-    padding: 5em 0 2em;
   }
 }
 
@@ -1021,14 +1020,11 @@ body:not(.home) .site-branding, body.paged .site-branding {
 # Content
 --------------------------------------------------------------*/
 .site-content {
-  background: #f6f6f6;
-  padding: 1em 0;
+  background: #ffffff;
 }
 
 .site-content .-inner-wrap {
-  margin: 0 auto;
-  max-width: 54.44rem;
-  padding: 1.25em 1.875em;
+  max-width: 70.44rem;
 }
 
 /*--------------------------------------------------------------
@@ -1050,9 +1046,15 @@ body:not(.home) .site-branding, body.paged .site-branding {
   }
 }
 
+.site-main {
+  background: #f6f6f6;
+  border: 1px solid #ededed;
+}
+
 @media screen and (min-width: 37.5em) {
   .site-main {
     margin: 0 27% 0 0;
+    padding: 1.25em 1.875em 1.875em 6.25em;
   }
 }
 

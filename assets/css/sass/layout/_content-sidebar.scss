@@ -12,9 +12,13 @@
 	}
 }
 
-@media screen and (min-width: 37.5em) {
-	.site-main {
+.site-main {
+    background: $color__background-content--inner;
+    border: 1px solid #ededed;
+
+	@media screen and (min-width: 37.5em) {
 		margin: 0 ($size__site-sidebar + 5) 0 0;
+		padding: 1.25em 1.875em 1.875em 6.25em;
 	}
 }
 
