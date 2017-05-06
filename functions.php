@@ -119,9 +119,11 @@ add_action( 'widgets_init', 'dbx_paper_widgets_init' );
 /**
  * Enqueue scripts and styles.
  */
-function dbx_paper_scripts() {
+function dbx_paper_scripts( $hook = '' ) {
+	$min = defined( 'WP_DEBUG' ) && WP_DEBUG ? '.min': '';
+	
 	wp_enqueue_style( 'dbx-paper-fonts', 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700' );
-	wp_enqueue_style( 'dbx-paper-style', get_template_directory_uri() . '/assets/css/style.min.css', array( 'dbx-paper-fonts' ) );
+	wp_enqueue_style( 'dbx-paper-style', get_template_directory_uri() . '/assets/css/style.'. $min .'css', array( 'dbx-paper-fonts' ) );
 
 	wp_enqueue_script( 'dbx-paper-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20120206', true );
 

@@ -794,8 +794,8 @@ a:hover, a:active {
 .posts-navigation .nav-links > div > a,
 .post-navigation .nav-links > div > a {
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 0.45rem 0.45rem;
+  border-radius: 4px;
+  padding: 0.45rem 0.75rem;
 }
 
 .comment-navigation .nav-next,

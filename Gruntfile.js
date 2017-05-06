@@ -198,9 +198,9 @@ module.exports = function( grunt ) {
 	// Default task.
 	grunt.registerTask( 'default', ['jshint', 'sass:theme', 'postcss:theme', 'sass:admin', 'postcss:admin'] );
 	grunt.registerTask( 'js', ['jshint', 'concat', 'uglify'] );
-	grunt.registerTask( 'css', ['sass:theme', 'postcss:theme', 'cssmin'] );
+	grunt.registerTask( 'css', ['sass:theme', 'postcss:theme'] );
 	grunt.registerTask( 'admin', ['sass:admin', 'postcss:admin'] );
-	grunt.registerTask( 'release', ['sass:themeRelease', 'sass:adminRelease', 'concat', 'uglify', 'sassdoc']);
+	grunt.registerTask( 'release', ['sass:themeRelease', 'sass:adminRelease', 'cssmin', 'concat', 'uglify', 'sassdoc']);
 
 	grunt.util.linefeed = '\n';
 };
