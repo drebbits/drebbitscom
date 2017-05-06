@@ -34,6 +34,19 @@ module.exports = function( grunt ) {
 			}
 		},
 
+		//CSSMin
+		cssmin: {
+			all: {
+				files: [{
+					expand: true,
+					cwd: 'assets/css',
+					src: ['style.css'],
+					dest: 'assets/css',
+					ext: '.min.css'
+				}]
+			}
+		},
+
 		// JSHint
 		jshint: {
 			all: [
@@ -185,7 +198,7 @@ module.exports = function( grunt ) {
 	// Default task.
 	grunt.registerTask( 'default', ['jshint', 'sass:theme', 'postcss:theme', 'sass:admin', 'postcss:admin'] );
 	grunt.registerTask( 'js', ['jshint', 'concat', 'uglify'] );
-	grunt.registerTask( 'css', ['sass:theme', 'postcss:theme'] );
+	grunt.registerTask( 'css', ['sass:theme', 'postcss:theme', 'cssmin'] );
 	grunt.registerTask( 'admin', ['sass:admin', 'postcss:admin'] );
 	grunt.registerTask( 'release', ['sass:themeRelease', 'sass:adminRelease', 'concat', 'uglify', 'sassdoc']);
 
