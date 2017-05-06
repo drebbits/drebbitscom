@@ -222,3 +222,11 @@ function add_svg_mime_type($mime_types){
 	return $mime_types;
 }
 add_filter( 'upload_mimes', 'add_svg_mime_type' );
+
+function remove_nav_menu_css_class( $class_css, $item ) {
+	return array_filter( $class_css, function( $class ) {
+		return  0 !== strpos( $class, 'menu-item' );
+	} );
+}
+add_filter( 'nav_menu_css_class', 'remove_nav_menu_css_class', 10, 2 );
+
